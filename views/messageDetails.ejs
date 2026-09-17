@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs")%>
+  <body>
+    <header>
+      <a href="/">
+        <h1>Mini Messageboard</h1>
+      </a>
+    </header>
+
+    <%- include("./partials/goback-link.ejs")%>
+
+    <h2 class="message-details-title"><%=message.user%></h2>
+    <div class="message">
+      <h4><%=message.text%></h4>
+      <!-- <p>message: <%=message.text%></p> -->
+    </div>
+  </body>
+</html>

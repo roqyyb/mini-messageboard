@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs")%>
+
+  <body>
+    <header>
+      <a href="/">
+        <h1>Mini Messageboard</h1>
+      </a>
+    </header>
+
+    <%- include("./partials/goback-link.ejs")%>
+    <form action="/new" method="POST">
+      <div class="form-control">
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" />
+      </div>
+      <div class="form-control">
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" />
+      </div>
+      <button>Send Message</button>
+    </form>
+  </body>
+</html>
